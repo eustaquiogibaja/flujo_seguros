@@ -2,10 +2,12 @@ import pandas as pd
 
 # Ruta del archivo TXT
 archivo_txt = 'Claro_Peru_Asegurados_20022021234238.txt'
+data_BD_ORACLE_tabla_asegurados = 'ruta BD'
 
 try:
     # Leer el archivo TXT
     data = pd.read_csv(archivo_txt, delimiter='|')
+    data = pd.read_csv(data_BD_ORACLE_tabla_asegurados, delimiter='|')
     
     # Guardar los datos en un archivo CSV temporal
     archivo_csv = 'clientes.csv'
