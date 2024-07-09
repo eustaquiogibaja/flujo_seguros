@@ -7,8 +7,15 @@ try:
     # Leer el archivo CSV
     data = pd.read_csv(archivo_csv)
     
-    # Ordenar los datos por nombre
+    # REGLA_1 : Ordenar los datos por nombre
     data_ordenada = data.sort_values(by='Nombre1')
+    
+    # REGLA_2 : Ordenar los nombres en las variables correspondientes
+    data_ordenada = data.sort_values(by='Nombre2')
+
+    # REGLA_3 : Ordenar los apellidos en las variables correspondientes 
+    data_ordenada = data.sort_values(by='Apellido2')    
+    
     
     # Exportar a Excel
     archivo_excel = 'clientes_ordenados.xlsx'
