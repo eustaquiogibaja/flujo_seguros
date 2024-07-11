@@ -8,6 +8,7 @@ try:
     data_ordenada = pd.read_csv(archivo_csv_ordenado)
     origen_oracle
     origen_excel_abc
+    origen_txt_2
     
     # Exportar a Excel
     archivo_excel = 'clientes_ordenados.xlsx'
