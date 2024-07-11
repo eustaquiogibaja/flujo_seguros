@@ -6,6 +6,8 @@ archivo_csv_ordenado = 'clientes_ordenados.csv'
 try:
     # Leer el archivo CSV ordenado
     data_ordenada = pd.read_csv(archivo_csv_ordenado)
+    origen_oracle
+    origen_excel_abc
     
     # Exportar a Excel
     archivo_excel = 'clientes_ordenados.xlsx'
